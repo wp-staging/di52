@@ -99,7 +99,7 @@ class App
      *
      * @throws ContainerException If there's any issue reflecting on the class, interface or the implementation.
      */
-    public static function singleton($id, $implementation = null, ?array $afterBuildMethods = null)
+    public static function singleton($id, $implementation = null, $afterBuildMethods = null)
     {
         static::container()->singleton($id, $implementation, $afterBuildMethods);
     }
@@ -311,7 +311,7 @@ class App
      *
      * @throws ContainerException      If there's an issue while trying to bind the implementation.
      */
-    public static function bind($id, $implementation = null, ?array $afterBuildMethods = null)
+    public static function bind($id, $implementation = null, $afterBuildMethods = null)
     {
         static::container()->bind($id, $implementation, $afterBuildMethods);
     }
@@ -346,7 +346,7 @@ class App
      * @return void This method does not return any value.
      * @throws ContainerException
      */
-    public static function singletonDecorators($id, $decorators, ?array $afterBuildMethods = null)
+    public static function singletonDecorators($id, $decorators, $afterBuildMethods = null)
     {
         static::container()->singletonDecorators($id, $decorators, $afterBuildMethods);
     }
@@ -367,7 +367,7 @@ class App
      * @return void This method does not return any value.
      * @throws ContainerException If there's any issue binding the decorators.
      */
-    public static function bindDecorators($id, array $decorators, ?array $afterBuildMethods = null)
+    public static function bindDecorators($id, array $decorators, $afterBuildMethods = null)
     {
         static::container()->bindDecorators($id, $decorators, $afterBuildMethods);
     }
@@ -480,7 +480,7 @@ class App
      * @return callable  A callable function that will return an instance of the specified class when
      *                   called.
      */
-    public static function instance($id, ?array $buildArgs = [], ?array $afterBuildMethods = null)
+    public static function instance($id, $buildArgs = [], $afterBuildMethods = null)
     {
         return static::container()->instance($id, $buildArgs ?? [], $afterBuildMethods);
     }
