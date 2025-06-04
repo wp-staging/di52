@@ -13,7 +13,7 @@ require_once __DIR__ . '/data/MySingletonClassTwo.php';
 
 class UnsetTest extends TestCase
 {
-    public function test_unset_binding_with_bind_default():void
+    public function test_unset_binding_with_bind_default()
     {
         $container = new Container(false);
 
@@ -30,7 +30,7 @@ class UnsetTest extends TestCase
         $this->assertNotSame($previousInstance, $container->get(MySingletonClass::class));
     }
 
-    public function test_unset_binding_with_singleton_default():void
+    public function test_unset_binding_with_singleton_default()
     {
         $container = new Container(true);
 
@@ -47,7 +47,7 @@ class UnsetTest extends TestCase
         $this->assertNotSame($previousInstance, $container->get(MySingletonClass::class));
     }
 
-    public function test_unset_singleton_with_bind_default(): void
+    public function test_unset_singleton_with_bind_default()
     {
         $container = new Container(false);
 
@@ -64,7 +64,7 @@ class UnsetTest extends TestCase
         $this->assertNotSame($previousInstance, $container->get(MySingletonClass::class));
     }
 
-    public function test_unset_singleton_with_singleton_default(): void
+    public function test_unset_singleton_with_singleton_default()
     {
         $container = new Container(true);
 
@@ -80,7 +80,7 @@ class UnsetTest extends TestCase
         $this->assertNotSame($previousInstance, $container->get(MySingletonClass::class));
     }
 
-    public function test_unset_given_when_then_with_bind_default(): void
+    public function test_unset_given_when_then_with_bind_default()
     {
         $container = new Container(false);
 
@@ -98,7 +98,7 @@ class UnsetTest extends TestCase
         $container->get(MySingletonClassTwo::class);
     }
 
-    public function test_unset_given_when_then_with_singleton_default(): void
+    public function test_unset_given_when_then_with_singleton_default()
     {
         $container = new Container(true);
 
