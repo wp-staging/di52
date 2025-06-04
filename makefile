@@ -6,7 +6,7 @@ PWD ?= pwd_unknown
 PROJECT_NAME = $(notdir $(PWD))
 # Suppress `make` own output.
 #.SILENT:
-PHP_VERSION ?= 7.0
+PHP_VERSION ?= 5.6
 
 # Create a function that will return the xdebug source depending on the PHP version.
 define xdebug_src
@@ -19,7 +19,7 @@ define xdebug_src
 	fi
 endef
 
-php_versions :=7.0 7.1 7.2 7.3 7.4 8.0 8.1 8.2 8.3 8.4
+php_versions :=5.6 7.0 7.1 7.2 7.3 7.4 8.0 8.1 8.2 8.3 8.4
 build: $(build_php_versions) ## Builds the project PHP images.
 	mkdir -p var/cache/composer
 	mkdir -p var/log
