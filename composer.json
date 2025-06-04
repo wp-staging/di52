@@ -1,5 +1,5 @@
 {
-  "name": "lucatume/di52",
+  "name": "wp-staging/di52",
   "description": "A PHP 5.6 compatible dependency injection container.",
   "license": "GPL-3.0",
   "authors": [
@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "lucatume\\DI52\\": "src/"
+      "WPStaging\\DI52\\": "src/"
     }
   },
   "require": {
