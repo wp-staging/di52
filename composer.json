@@ -5,11 +5,14 @@
   "authors": [
     {
       "name": "Luca Tumedei",
-      "email": "luca@theaveragedev.com"
+      "email": "luca@theaveragedev.com",
+      "role": "Founder"
     },
     {
       "name": "WP STAGING",
-      "email": "dev@wp-staging.com"
+      "email": "support@wp-staging.com",
+      "role": "Maintainer",
+      "homepage": "https://wp-staging.com"
     }
   ],
   "autoload": {
