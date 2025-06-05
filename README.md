@@ -1,4 +1,6 @@
-A PHP 5.6+ compatible dependency injection container inspired
+> Note: This is a fork by WP Staging as they need to support PHP 7.0
+
+A PHP 7.0+ compatible dependency injection container inspired
 by [Laravel IOC](https://laravel.com/docs/5.0/container "Service Container - Laravel - The PHP Framework For Web Artisans")
 and [Pimple](http://pimple.sensiolabs.org/ "Pimple - A simple PHP Dependency Injection Container") that works even
 better on newer version of PHP.
