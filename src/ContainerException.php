@@ -37,6 +37,7 @@ class ContainerException extends Exception implements ContainerExceptionInterfac
                 if (PHP_VERSION_ID < 80100) {
                     $traceProperty->setAccessible(true);
                 }
+
                 return $traceProperty->getValue($object);
             }
 
@@ -65,6 +66,7 @@ class ContainerException extends Exception implements ContainerExceptionInterfac
                 if (PHP_VERSION_ID < 80100) {
                     $traceProperty->setAccessible(true);
                 }
+
                 $traceProperty->setValue($object, $value);
                 return true;
             }
